@@ -26,7 +26,7 @@ public class findArrayIndexforTargetSum {
 		int target=11;
 		int sum=0;
 		int size=input.length;
-	//	if(size>1 ) 	
+	
 		{
 			for(int i=0;i<=size-1;i++)
 			{
