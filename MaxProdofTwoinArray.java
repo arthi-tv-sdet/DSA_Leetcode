@@ -53,7 +53,7 @@ public class MaxProdofTwoinArray {
 	@Test
 	public void MaxProdEdge()
 	{
-		int nums[]={5,5,5,5};
+		int nums[]={-1,-1};
 		MaxProdofTwoinArray(nums);
 	}
 	
