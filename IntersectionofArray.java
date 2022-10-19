@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 import org.junit.Test;
 
-public class Intersection {
+public class IntersectionofArray {
 
 	
 	//349. Intersection of Two Arrays
