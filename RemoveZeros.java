@@ -28,7 +28,7 @@ Output: [1,3,12,0,0]
 	{
 		int p1=0,p2=1;
 			
-		while(p1<=nums.length-1 && p2<=nums.length-1)
+		while(p1<=nums.length-1 && p2<=nums.length-1&& nums[p2]!=0)
 		{
 			
 			if(nums[p1]==0 &&nums[p2]!=0 || nums[p1]!=0 && nums[p2]==0)
@@ -48,7 +48,6 @@ Output: [1,3,12,0,0]
 				p2++;
 			}
 			
-			
 		}
 		
 		System.out.println(Arrays.toString(nums));
@@ -61,7 +60,8 @@ Output: [1,3,12,0,0]
 	{
 		//int nums[]= {0,1,0,3,12};
 		//int nums[]= {0,2,3,0};
-		int nums[]= {0};
+		//int nums[]= {0};
+		int nums[]= {1,0};
 		moveZeros(nums);
 	}
 	
