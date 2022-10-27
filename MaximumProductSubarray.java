@@ -43,7 +43,11 @@ public class MaximumProductSubarray {
 	private void MaxProdSubArray(int nums[])
 	{
 		int p1=0,p2=1,len=nums.length,maxProd=Integer.MIN_VALUE,prod=1;
-
+		if(len==1)
+		{
+			System.out.println(nums[p1]);
+		}
+		else if(len>1)
 		while(p1<len&&p2<len)
 		{
 			prod=prod*nums[p1]*nums[p2];
@@ -53,7 +57,7 @@ public class MaximumProductSubarray {
 			
 			if(maxProd>0)
 				p2++;
-		}
+		
 
 		if(maxProd<0)
 		{p1++;
@@ -64,17 +68,46 @@ public class MaximumProductSubarray {
 		
 		else
 			System.out.println(maxProd);
-
+		}
 		
 	}
 
+	private int maxProd_fromEdges(int[] nums)
+	{
+		int len=nums.length,maxProd=Integer.MIN_VALUE,prod=1;
+		
+		
+		for(int i=0;i<=len-1;i++)
+		{
+			prod=prod*nums[i];
+			maxProd=Math.max(maxProd, prod);
+			if(nums[i]==0)
+			{
+				prod=1;
+			}
+			
+		}
+		prod=1;
+		for(int j=len-1;j>=0;j--)
+		{
+			prod=prod*nums[j];
+			maxProd=Math.max(maxProd, prod);
+			if(nums[j]==0)
+			{
+				prod=1;
+			}
+		}
+		System.out.println(maxProd);	
+		return maxProd;	}
+	
 	@Test
 	public void test()
 	{
-		int nums[]= {2,3,-2,4};
-		//int nums[]= {0,10,0,4};
+		//int nums[]= {2,3,-2,4};
+		//int nums[]= {-1,-2,3,-4}; //output=6
+		int nums[]={1};
 
-		MaxProdSubArray(nums);
+		maxProd_fromEdges(nums);
 	}
 
 }
