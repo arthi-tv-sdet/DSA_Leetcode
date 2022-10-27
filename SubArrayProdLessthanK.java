@@ -18,7 +18,7 @@ public class SubarrayProdLessthanK {
 	 * 
 	 * 
 	 * 
-	 * PSEUDOCODE:
+	 * PSEUDOCODE: grow and shrink 2 pointers
 	 * 
 	 * 
 	 * declare value for product=1,count=0, pointers start=0 end=0
