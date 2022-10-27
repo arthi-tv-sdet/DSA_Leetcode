@@ -63,5 +63,4 @@ public class ReverseArray2P {
 		int num[]= {2,1,1,2};
 		reverseArray_2P(num);
 	}
-	
-}
+	}
