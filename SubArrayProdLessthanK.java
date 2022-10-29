@@ -56,6 +56,7 @@ public class SubarrayProdLessthanK {
 		{
 			product=product/nums[start];
 			start++;
+			end++;
 			indexCount=indexCount+end-start;
 			
 		}
@@ -67,23 +68,19 @@ public class SubarrayProdLessthanK {
 	
 	
 	
-	/*
-	 * private void subArraysLessthanK_BF(int nums[],int k) { int product=1,count=0;
-	 * 
-	 * for(int i=0;i<=nums.length-1;i++) { for(int j=1;j<=nums.length-1;j++) {
-	 * product=nums[j]*nums[i]; if(product<k) count++; //else break; } }
-	 * System.out.println(count); }
-	 */
+	
 	
 	@Test
 	public void test()
 	{
-		int nums[]= {10,5,2,6};
-		int k=100;
+		//int nums[]= {10,5,2,6};
+		//int k=100;
+		int nums[]= {1,2,3};
+		int k=0;
 		subArraysLessthanK(nums,k);
-		//subArraysLessthanK_BF(nums,k);
+		
 	}
 	
 	
-	 
+	
 }
