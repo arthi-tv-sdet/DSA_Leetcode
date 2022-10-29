@@ -8,7 +8,11 @@ class Solution {
         if the sum is equal to target value 
         return indeces
             
+        Input: numbers = [2,7,11,15], target = 9
+        Output: [1,2]
         
+        Input: numbers = [2,3,4], target = 6
+        Output: [1,3]
         
         2 pointers
         
