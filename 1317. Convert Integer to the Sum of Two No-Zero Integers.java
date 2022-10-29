@@ -12,7 +12,7 @@ class Solution {
       
       
       */
-        .java
+        
         int m=n-1;
         
         int q1=n/10, q2=m/10;
