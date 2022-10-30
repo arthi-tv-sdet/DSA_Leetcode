@@ -30,10 +30,7 @@ public class ArraySortDutchFlag {
 		4.If the arr[middle] is 0, swap middle and high values and decrement high pointer
 		5.Break the loop when middle<=high
 		
-		
-		
-
-	 * 
+		 
 	 *  
 	*/
 	
@@ -44,7 +41,8 @@ public class ArraySortDutchFlag {
 		
 		while(p2<=p3)
 		{
-			if(nums[p2]==0)//if(nums[p2]==2) for descending
+			//if(nums[p2]==0)
+			if(nums[p2]==2) //for descending
 			{
 				int temp=nums[p2];
 				nums[p2]=nums[p1];
@@ -54,7 +52,8 @@ public class ArraySortDutchFlag {
 			else
 			if(nums[p2]==1) p2++;
 			else
-			if(nums[p2]==2)//if(nums[p2]==0)for descending
+			//if(nums[p2]==2)//
+				if(nums[p2]==0) //for descending
 			{
 				int temp=nums[p3];
 				nums[p3]=nums[p2];
@@ -66,11 +65,40 @@ public class ArraySortDutchFlag {
 		System.out.println(Arrays.toString(nums));
 	}
 	
+	private void sortarray_descending_traversal(int nums[])
+	{
+		int p1=nums.length-1,p2=1,p3=0;
+		
+		while(p3<=p1)
+		{
+			if(nums[p2]==0)
+			{
+				int temp=nums[p2];
+				nums[p2]=nums[p3];
+				nums[p3]=temp;
+				p3++;p2++;
+			}
+			else
+			if(nums[p2]==1) p2++;
+			else
+			if(nums[p2]==2)
+			{
+				int temp=nums[p1];
+				nums[p1]=nums[p2];
+				nums[p2]=temp;
+				p1--;
+			}
+			
+		}
+		System.out.println(Arrays.toString(nums));
+	}
+	
 	
 	@Test
 	public void input()
 	{
 		int nums[]= {1,2,0,1,2};
-		sortarray_Ascending(nums);
+		//sortarray_Ascending(nums);
+		sortarray_descending_traversal(nums);
 	}
 }
