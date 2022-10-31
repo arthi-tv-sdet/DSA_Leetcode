@@ -42,6 +42,10 @@ public class Anagram {
 	 * traverse through each string from 0 to length-1
 	 * for each character at string add to map if not available or increment the value if available already
 	 * compare both maps and return boolean value
+	 
+	 * 
+	 * Time O[N]
+	 * Space O[N]
 	 */
 
 	
