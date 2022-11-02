@@ -36,8 +36,12 @@ public class ContainsDuplicateII {
 	 * 
 	 * 
 	 * Pseudocode:
+	 * create a set
 	 * traverse through each element in nums using two for loops i and j
-	 * if nums[i]==nums[j] and less abs{i-j) less than equal to k return true
+	 * if nums[i]==nums[j] and less abs{i-j) less than equal to k 
+	 * add nums[i] to set
+	 * if set is not empty return true
+	 * else return false
 	 * 
 	 */
 	
