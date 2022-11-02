@@ -43,6 +43,9 @@ public class ContainsDuplicateII {
 	 * if set is not empty return true
 	 * else return false
 	 * 
+	 
+	  * Time O[N}
+	 * Space O[N]
 	 */
 	
 	
