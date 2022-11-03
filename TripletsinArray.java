@@ -61,17 +61,47 @@ public class TripletsinArray {
 		}
 				System.out.println(counter);
 		}
+		
+		
+		/*Pseudocode- bruteforce
+		 * initialise three for loops i,j and k
+		 * i=0,j=i+1 and k=j+1 and traverse through array till nums.length-1,length-2and length-3 respectively
+		 * initialise count=0
+		 * for each iteration compare j-1 and k-j if the difference  are equal 
+		 * increment count
+		*/
+		
+		public void TripletsArray_BF(int nums[],int diff)
+		{
+			if(nums.length<=3)
+				System.out.println("no triplets in array");
+			int count=0;
+			for(int i=0;i<nums.length-2;i++)
+			{
+				for(int j=i+1;j<nums.length-1;j++)
+				{
+					for(int k=j+1;k<nums.length;k++)
+					{
+						if(((nums[j]-nums[i])==diff) &&( (nums[k]-nums[j])==diff))
+							count++;
+					}
+				}
+			}
+			System.out.println(count);
+			
+		}
 
 		@Test
 		public void Triplet1()
 		{	int nums[]= {0,1,4,6,7,10},diff=3;
-			TripletsArray(nums,diff);
+			//TripletsArray(nums,diff);
+			TripletsArray_BF(nums,diff);
 		}
 		
 		@Test
 		public void Triplet2()
 		{	int nums[]= {4,5,6,7,8,9},diff=2;
-			TripletsArray(nums,diff);
+			TripletsArray_BF(nums,diff);
 		}
 
 
