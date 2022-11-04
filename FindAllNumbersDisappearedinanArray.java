@@ -25,8 +25,11 @@ public class FindAllNumbersDisappearedinanArray {
 	 * add to res of the number is not present
 	 * return the arraylist  res
 	 * 
-	 * Pseudocode:
-	 * 
+	 * Pseudocode: Using HashSet
+	 * Add the given nums array in a numSet
+	 * traverse through the set for each count if not in set 
+	 * add in res list
+	 * return res list
 	 */
 	@Test
 	public void test()
