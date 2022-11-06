@@ -30,8 +30,11 @@ public class FirstUniqueCharacter {
 	 * else return -1
 	 * 
 	 * Pseudocode: using array
-	 * 
-	 * 
+	 * initialize a character array of length 26
+	 * traverse through the string
+	 * for each char At (i) increment the corresponding value of char position in char Array
+	 * find the index of char with value 1
+	 * else return -1
 	 */
 	
 	@Test
@@ -42,15 +45,15 @@ public class FirstUniqueCharacter {
 		//firstUniqueChar(s);
 	}
 	
-	//@Test
+	@Test
 	public void test2() {
 		String s="leetcode";
-		firstUniqueChar_BF(s);
-		//firstUniqueCharArray(s);
+		//firstUniqueChar_BF(s);
+		firstUniqueCharArray(s);
 		//firstUniqueChar(s);
 	}
 
-	//@Test
+	@Test
 	public void test3() {
 		String s="loveleetcode";
 		//firstUniqueChar_BF(s);
@@ -84,19 +87,23 @@ public class FirstUniqueCharacter {
 		System.out.println("-1");
 		return -1;
 	}
-	 private void firstUniqueCharArray(String s)
+	 private int firstUniqueCharArray(String s)
 	 {
-		HashMap<Character,Integer> hm=new HashMap<>();
-		
+		int arr[]=new int[26];
 		for(int i=0;i<s.length();i++)
 		{
-			hm.put(s.charAt(i),hm.getOrDefault(s.charAt(i),0)+1);
+			arr[s.charAt(i)-'a']++;
 		}
-		//System.out.println(hm);
-		if(hm.containsValue(1))
+		for(int i=0;i<arr.length;i++)
 		{
-			System.out.println(hm.containsValue(1));
+			if(arr[s.charAt(i)-'a']==1)
+			{
+				System.out.println(i);
+				return i;
+			}
 		}
+		System.out.println("-1");
+		return -1;
 	 }
 	
 	 private int firstUniqueChar(String s)
