@@ -44,6 +44,9 @@ public class UncommonWords {
 	 * each string add the string to map key and increment if occurence is more for
 	 * all the values with 1 add the corresponding keys to a list
 	 * 
+	 
+	 Time: O[N]
+	 Space: O[N]
 	 */
 
 	@Test
@@ -55,18 +58,18 @@ public class UncommonWords {
 
 	private void findUncommonString(String s1, String s2) {
 
-		HashMap<String, Integer> hmap = new HashMap<>();
+		HashMap<String, Integer> hmap = new HashMap<>(); //O{N]
 		//int occurence=1;
-		ArrayList<String> uncommonL = new ArrayList<>();
+		ArrayList<String> uncommonL = new ArrayList<>(); //O[N]
 		
 		
-		String[] splitS1 = s1.split(" ");
-		String[] splitS2 = s2.split(" ");
-		for (int i = 0; i < splitS1.length; i++) {
+		String[] splitS1 = s1.split(" "); //O[N]
+		String[] splitS2 = s2.split(" "); //O[N]
+		for (int i = 0; i < splitS1.length; i++) { //O[N]
 			hmap.put(splitS1[i], hmap.getOrDefault(splitS1[i], 0) + 1);
 
 		}
-		for (int i = 0; i < splitS2.length; i++) {
+		for (int i = 0; i < splitS2.length; i++) { O[M]
 			hmap.put(splitS2[i], hmap.getOrDefault(splitS2[i], 0) + 1);
 
 		}
@@ -74,7 +77,7 @@ public class UncommonWords {
 		// System.out.println(hmap);
 
 		
-		for (Map.Entry<String, Integer> entry: hmap.entrySet()) {
+		for (Map.Entry<String, Integer> entry: hmap.entrySet()) {//O[N]
 			  
 			 if (entry.getValue()==1)
 				 
@@ -84,9 +87,9 @@ public class UncommonWords {
 		  
 		  
 		  }
-		 String res[]=new String[uncommonL.size()];
+		 String res[]=new String[uncommonL.size()]; O[N]
        
-       for(int i=0;i<uncommonL.size();i++)
+       for(int i=0;i<uncommonL.size();i++)//O[N]
        {
            res[i]=uncommonL.get(i);
        }
