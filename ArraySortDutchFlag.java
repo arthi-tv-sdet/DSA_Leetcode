@@ -22,6 +22,8 @@ public class ArraySortDutchFlag {
 		4.If the arr[middle] is 2, swap middle and high values and decrement high pointer
 		5.Break the loop when middle<=high
 		
+		Time: O[N]
+		Space: O[1]
 		
 	*	Pseudocode- Dutch flag or 3 pointers Algorithm- sort in descending order
 	 * 	1.Initialize low=0, middle=0 and high=arr.length-1
