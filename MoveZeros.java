@@ -22,6 +22,9 @@ Output: [1,3,12,0,0]
 		3. if p1 or p2 is 0 swap, increment p1 and p2
 		4. else if p1 and p2 are 0 increment p2
 		5. return the array
+		
+		Time: O[N]
+		Space: O[1]
 		*/
 	
 	private void moveZeros(int nums[])
