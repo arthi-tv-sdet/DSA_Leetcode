@@ -18,6 +18,9 @@ public class MergeStringsAlternate {
 	 * traverse on each string using while loop if w1 and w2 are less than string length
 	 * for each charAt if there is value of string concatenate with the output
 	 * 
+	 
+	 Time: O[N]
+	 Space: O[N]
 	*/
 	
 	
