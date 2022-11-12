@@ -5,8 +5,17 @@ import java.util.Collections;
 
 import org.junit.Test;
 
+/*Pseudocode
+*create an arraylist to store nums values
+*sort the array
+*find the product of last two numbers using the formula and return the same
+
+Time:O[nlogN]
+Space: O[N]
+*/
 public class MaxProd {
 
+	
 	
 	private void MaxProd_BF(int nums[])
 	{	
