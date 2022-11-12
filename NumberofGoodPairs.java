@@ -32,6 +32,9 @@ public class NumberofGoodPairs {
 	 * if both are equal increment count
 	 * 
 	 
+	 Time: O[N]
+	 Space:O[1]
+	 
 	 */
 			private void goodPairs(int nums[])
 			{
