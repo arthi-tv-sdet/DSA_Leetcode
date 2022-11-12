@@ -21,6 +21,9 @@ public class FirstUniqueCharacter {
 	 * compare the index using below methods
 	 * string methods indexOf and lastIndexOf
 	 * if both index are same return the index else return -1
+	 
+	 Time: O[N]
+	 Space: O[1]
 	 * 
 	 * Pseudocode: Brute force
 	 * traverse through the string
@@ -29,12 +32,18 @@ public class FirstUniqueCharacter {
 	 * return the index if temp==1
 	 * else return -1
 	 * 
+	  Time: O[N]
+	 Space: O[1]
+	 
 	 * Pseudocode: using array
 	 * initialize a character array of length 26
 	 * traverse through the string
 	 * for each char At (i) increment the corresponding value of char position in char Array
 	 * find the index of char with value 1
 	 * else return -1
+	 
+	  Time: O[N]
+	 Space: O[N]
 	 */
 	
 	@Test
