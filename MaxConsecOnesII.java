@@ -24,7 +24,12 @@ public class MaxConsecOnesIII {
 	 * find Math.max(count,maxCount
 	 * while start > k and less than len and nums[start]!=0 count++
 	 * else nums[start++]
-	 * find Math.max(count,maxCOunt)
+	 * find Math.max(count,maxCount)
+	 
+	Time:O[N]
+	Space:O[1]
+	 
+	 
 	*/
 	
 	
