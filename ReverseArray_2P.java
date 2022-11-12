@@ -30,6 +30,9 @@ public class ReverseArray2P {
 	 * Edge
 	 * 
 	 * input[]={2,1,1,2} output[]={2,1,1,2}
+	 
+	 Time: O[N]
+	 Space: O[1]
 	 * 
 */
 	private void reverseArray_2P(int num[])
