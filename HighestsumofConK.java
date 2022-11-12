@@ -21,15 +21,18 @@ public class HighestsumofConK {
 	 * input nums=[1,4,3] k=2 output=7
 	 * input nums=[] k=3 output =[]
 	 * 
+	 
+	 Time: O[N]
+	 Space:O[1]
 	 */
 	
 	private int sumOfConsK(int nums[],int k)
 	{
-		int maxSum=Integer.MIN_VALUE,p=0,sum=0;
+		int maxSum=Integer.MIN_VALUE,p=0,sum=0; //O[1]
 			
 		if (nums!=null && nums.length>1)
 		{
-			while(p<k-1)
+			while(p<k-1)//O[N]
 			{
 				sum+=nums[p++];
 			}
