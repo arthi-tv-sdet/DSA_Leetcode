@@ -34,6 +34,9 @@ public class NumberofEquivalentDominoPairs {
 	 * compare set 1 and 2 and increment count if both has same values 
 	 * clear both sets and continue with other index
 	 * return count 
+	 
+	 Time: O[N+M]
+	 Space:O[N]
 	 */
 
 	@Test
