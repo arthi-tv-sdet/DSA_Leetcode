@@ -28,6 +28,10 @@ public class ArrangeforGivenRange {
 	 * create a res array to combine all
 	 * 
 	 * 
+	 * Time: O[N]
+	 * Space: O[N]
+	 * 
+	 * 
 	 * try 3 pointers algorithm for optimized solution
 	 * Pseudocode_3 pointers:
 	 * initialize three pointers low,mid,high
@@ -36,6 +40,8 @@ public class ArrangeforGivenRange {
 	 * if mid index value==high, swap high and middle and decrement high by 1
 	 * break the loop when mid<=high 
 	 * 
+	 * Time: O[N]
+	 * Space: O[1]
 	 * 
 	
 	*/
@@ -49,9 +55,9 @@ public class ArrangeforGivenRange {
 	
 	public void arrangeRange_3P(int nums[])
 	{
-		int low=0,mid=1,high=nums.length-1,temp=0;
+		int low=0,mid=1,high=nums.length-1,temp=0;//O[1]
 		
-		while(mid<=high)
+		while(mid<=high)//O[N]
 		{
 			if(nums[mid]<=3)
 			{
@@ -83,13 +89,14 @@ public class ArrangeforGivenRange {
 	
 	
 	
+	
 	public void arrangeOrder(int nums[])
 	{
-		List<Integer> temp1=new ArrayList<>();
-		List<Integer> temp2=new ArrayList<>();
-		List<Integer> temp3=new ArrayList<>();
+		List<Integer> temp1=new ArrayList<>();//O[N]
+		List<Integer> temp2=new ArrayList<>();//O[N]
+		List<Integer> temp3=new ArrayList<>();//O[N]
 		
-		for(int i=0;i<nums.length;i++)
+		for(int i=0;i<nums.length;i++)//O[N]
 		{
 			if(nums[i]<=3)
 			{
