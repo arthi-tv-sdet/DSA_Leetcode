@@ -34,26 +34,29 @@ public class IntersectionII {
 		  4. if nums2l contains the nums1 element
 		  5. add to result list	  
 		  
+		  Time: O[N]
+		  Space:O[N]
+		  
 	*/
 	
 		private void intersectionII(int []nums1,int []nums2)
 	
 		{
-			List <Integer> numL1=new ArrayList<>();
-			List <Integer> numL2=new ArrayList<>();
+			List <Integer> numL1=new ArrayList<>(); //O[N]
+			List <Integer> numL2=new ArrayList<>();//O[N]
 			
 	        
 	        
-			for(int i=0;i<=nums2.length-1;i++)
+			for(int i=0;i<=nums2.length-1;i++)//O[N]
 			{
 				numL1.add(nums2[i]);
 			}
-			for(int i=0;i<=nums1.length-1;i++)
+			for(int i=0;i<=nums1.length-1;i++) O[N]
 				
 			{
-				if(numL1.contains(nums1[i]))
+				if(numL1.contains(nums1[i]))//O[1]
 				{
-					numL2.add(nums1[i]);
+					numL2.add(nums1[i]);//O[1]
 					
 				}
 			}
