@@ -37,7 +37,8 @@ public class MaximumProductSubarray {
 	 * if product is greater than 0 continue untill len
 	 * return the product
 	 *  
-	 * 
+	 * Time: O[N]
+	 Space: O[1]
 	 */
 
 	private void MaxProdSubArray(int nums[])
