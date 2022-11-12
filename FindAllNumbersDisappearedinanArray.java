@@ -30,6 +30,12 @@ public class FindAllNumbersDisappearedinanArray {
 	 * traverse through the set for each count if not in set 
 	 * add in res list
 	 * return res list
+	 * 
+	 * Time: O[N]
+	 *Space O[N]
+	 
+	 
+	 
 	 */
 	@Test
 	public void test()
@@ -65,11 +71,11 @@ public class FindAllNumbersDisappearedinanArray {
 
 	private void numsDisappeared(int[] nums) {
 
-			ArrayList<Integer> res=new ArrayList<>();
-			HashSet<Integer> numsSet=new HashSet<>();
-			int count=1,n=nums.length;
+			ArrayList<Integer> res=new ArrayList<>();//O[N]
+			HashSet<Integer> numsSet=new HashSet<>();//O[N]
+			int count=1,n=nums.length;//O[1]
 			
-			for(int i=0;i<nums.length;i++)
+			for(int i=0;i<nums.length;i++)//O[N]
 			{
 				numsSet.add(nums[i]);
 			}
