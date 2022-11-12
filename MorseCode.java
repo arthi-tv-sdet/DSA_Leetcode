@@ -41,6 +41,9 @@ public class MorseCode {
 	 * traverse through the given words [] and for each word compare the charAt with map
 	 * add the value of each charAt to a set
 	 * return the size of the set
+	 
+	 Time: O[N]
+	 Space: O[N]
 	 */
 	public void uniqueMorseCode(String [] words)
 	{
