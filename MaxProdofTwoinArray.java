@@ -31,6 +31,9 @@ public class MaxProdofTwoinArray {
 	 * decrement 1 to value of start and end and find the product
 	 * compare maxProd and product for each iteration and return the maxProd
 	 * 
+	 
+	 Time: O[N]
+	 Space: O[1]
 	*/
 	
 	
