@@ -2,9 +2,18 @@ class Solution {
     public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
         
        //Pseudocode
-       // find the sum of alice
-    //find the sum of bob
-           // Math.abs(alice-bob)
+       // initialize Asum,Bsum to store sum of alice and bob arrays
+       // find the sum of alice and bob
+       // create a hashset and add bob array
+       //find diff=a+b/2 to find the difference of single entity
+       // traverse ethrough alice array 
+       // if set contains alice[i]+diff
+      //  return as array with alice[i] and alice[i]+diff
+        
+      //  Time: O[N]
+      //  Space : O[N]    
+    
+          
         int Asum=0,Bsum=0;
         HashSet<Integer> bset=new HashSet<>();
         
