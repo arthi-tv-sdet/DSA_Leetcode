@@ -1,4 +1,4 @@
-package DSA;
+package DSA_Array;
 
 import java.util.Arrays;
 
@@ -10,7 +10,15 @@ public class AddConsecutiveinArray {
 		 * int[] = {1,2,3,4,5}
 				op - {3,5,7,9}*
 		 * 
+		 * Pseudocode:
+		 * initialize an array for output with length of arr-1
+		 * traverse through the array
+		 * for each arr[i] add with the next consecutive number i+1
+		 * store each sum in output array
+		 * return the output array
 		 * 
+		 * Time: O[N]
+		 * Space: O[N-1]
 		*/
 		
 		int arr[]={1,2,3,4,5};
