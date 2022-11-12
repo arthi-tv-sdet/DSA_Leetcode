@@ -22,8 +22,8 @@ public class IntersectionofArray {
    print the elements
 	 * 
 	 * 
-	 * 
-	 * 
+	 * Time:O[N+M]
+	 * Space: O[N+M]
 	 * 
 	 * 
 	 * 
