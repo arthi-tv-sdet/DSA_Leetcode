@@ -23,13 +23,16 @@ public class ReverseWordsinString {
 	 * print each string from array in reverse 
 	 * 	
 	 * 
-	 * Pseudocode- Using 2 Pointer (Optimised)
+	 * Pseudocode- Using 2 Pointer (Optimised) 
 	 * split the sentence to string array
 	 * traverse through each word of array
 	 *in a separate method reverse the charaters of each word using 2 pointers left and right , temp to swap
 	 *increment left, decrement right after each swap
 	 *reversed string is appended to temp string
 	 *finally trim temp and return
+	 
+	 Time: O[N]
+	 Space: O[N]
 	*/
 	
 	private String reverseWords(String in)
