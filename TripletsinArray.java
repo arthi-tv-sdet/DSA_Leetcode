@@ -28,6 +28,8 @@ public class TripletsinArray {
 	 * if P2-P1=diff and P2<=nums.length then increment counter and P2
 	 * if P2-P1 is not equal to diff and P2<=nums.length and P1<= nums.length  increment P1 and P2
 	 * return the counter value
+	 Time: O[N]
+	 Space: O[1]
 	*/
 	
 		private void TripletsArray(int []nums,int diff)
@@ -69,6 +71,8 @@ public class TripletsinArray {
 		 * initialise count=0
 		 * for each iteration compare j-1 and k-j if the difference  are equal 
 		 * increment count
+		 Time: O[N]
+		 Space: O[1]
 		*/
 		
 		public void TripletsArray_BF(int nums[],int diff)
@@ -88,6 +92,34 @@ public class TripletsinArray {
 				}
 			}
 			System.out.println(count);
+			
+			/* Pseudocode: Using HashSet
+			*initialize a hashSet and add all the numbers in given input array
+			*traverse through the array
+			*if set contains both nums[i] +diff and nums[i]-diff
+			
+			Time: O[N]
+			Space: O[N]
+			*/
+			
+			public int arithmeticTriplets(int[] nums, int diff) {
+        if(nums.length<3)
+				return -1;
+			int count=0;
+        
+        HashSet<Integer> nSet= new HashSet<>();
+			for(int i=0;i<nums.length;i++)
+			{
+				nSet.add(nums[i]);
+			}
+        
+        for(int i=0;i<nums.length;i++)
+        {
+            if(nSet.contains(nums[i]+diff) && nSet.contains(nums[i]-diff))
+                count++;
+        }
+			return count;
+    }
 			
 		}
 
