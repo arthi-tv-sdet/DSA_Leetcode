@@ -37,6 +37,15 @@ public class BackspaceStringCompare {
 	 * Space: O[N]
 	 * 
 	 * 
+	  //Pseudocode: Using stack
+        // create a stack for each string
+        // traverse through the string
+        // push each character into stack
+        // if the charAt is # pop from stack
+        // if both stacks are equal return true
+        // else return false
+	
+	Time: O[N] Space: O[N]
 	 */
 	@Test
 	public void test()
@@ -78,4 +87,37 @@ public class BackspaceStringCompare {
 	        else
 	        {  System.out.println("false");}
 	}
+	
+	 public boolean backspaceCompare(String s, String t) {
+       
+                 
+      Stack <Character> stackS=new Stack<>();
+      Stack <Character> stackT=new Stack<>();
+        
+    for(int i=0;i<s.length();i++)
+    {
+        if(s.charAt(i)!='#' )
+        stackS.push(s.charAt(i));
+        else
+            if(s.charAt(i)=='#' && !stackS.isEmpty())
+                stackS.pop();
+        
+    }
+          for(int j=0;j<t.length();j++)
+          { 
+              if(t.charAt(j)!='#' )
+        stackT.push(t.charAt(j));
+        else
+            if(t.charAt(j)=='#' && !stackT.isEmpty())
+                stackT.pop();
+        }
+       
+       
+    
+        if(stackS.equals(stackT))
+            return true;
+            
+            
+                return false;
+    }
 }
