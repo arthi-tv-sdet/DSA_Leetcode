@@ -22,26 +22,26 @@ class Solution {
          if list1 equals list 2 return true
          else return false
          
-         Time: O[N] Space: O[N]
+         Time: O[N*M] Space: O[N]
         */
         
         ListNode temp=head;
         
-        ArrayList<Integer> list1=new ArrayList<>();
-        ArrayList<Integer> list2=new ArrayList<>();
+        ArrayList<Integer> list1=new ArrayList<>(); //O[N]
+        ArrayList<Integer> list2=new ArrayList<>(); // O[N]
         
-        while(temp!=null)
+        while(temp!=null) //O[N]
         {
-            list1.add(temp.val); 
+            list1.add(temp.val); //O[1]
             temp=temp.next;
         }
         
-        for(int i=list1.size()-1;i>=0;i--)
+        for(int i=list1.size()-1;i>=0;i--) //O[N]
         {
-            list2.add(list1.get(i));
+            list2.add(list1.get(i)); //O[N]
         }
         
-        return list1.equals(list2);
+        return list1.equals(list2); //O[N]
         
         
         
