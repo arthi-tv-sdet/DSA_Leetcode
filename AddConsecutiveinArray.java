@@ -31,6 +31,7 @@ public class AddConsecutiveinArray {
 			
 		}
 		System.out.println(Arrays.toString(output));
+		System.out.println(Arrays.toString(output));
 	}
 	
 }
